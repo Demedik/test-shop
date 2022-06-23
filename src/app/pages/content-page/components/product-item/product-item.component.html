@@ -1,0 +1,19 @@
+<div class="product-wrapper">
+  <div class="product-img">
+    <img [src]="product.images[0].src" alt="">
+  </div>
+  <div>
+    <div class="product-title">
+      <div>
+          {{ product.title }}
+      </div>
+      <div>
+          {{ product.variants[0].price }}
+      </div>
+    </div>
+    <div class="product-buttons">
+      <button mat-stroked-button class="product-add-cart" (click)="addToCart()">Add to cart</button>
+      <button mat-stroked-button class="product-quick-view">Quick view</button>
+    </div>
+  </div>
+</div>

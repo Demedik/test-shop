@@ -1,0 +1,19 @@
+<div class="content-wrapper">
+  <div class="category-wrapper content-item">
+    <div class="category-order">
+      <form [formGroup]="groupControl">
+        <mat-form-field appearance="fill">
+          <mat-select formControlName="orderBy">
+            <mat-option *ngFor="let option of selectOptions" [value]="option.value">
+              {{option.title}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </form>
+    </div>
+    <app-category></app-category>
+  </div>
+  <div class="content-item">
+    <app-cart></app-cart>
+  </div>
+</div>

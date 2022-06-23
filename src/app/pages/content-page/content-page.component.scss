@@ -1,0 +1,29 @@
+:host {
+  .content-wrapper {
+    display: flex;
+    padding: 20px 64px;
+  }
+
+  .category-wrapper {
+    width: calc(100% - 290px - 18px * 4);
+  }
+
+  .content-item {
+    margin: 0 18px;
+  }
+
+  .category-order {
+    padding-left: 4px;
+    padding-top: 10px;
+  }
+
+  ::ng-deep {
+    .mat-form-field-wrapper {
+      width: 273px;
+      height: 43px;
+      font-size: 16px;
+      align-items: center;
+      display: flex;
+    }
+  }
+}

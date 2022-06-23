@@ -1,0 +1,37 @@
+<div class="cart-wrapper">
+  <div>
+    <div class="cart-title">
+        <div class="cart-title-text">
+          Cart
+        </div>
+        <div class="cart-title-count">
+          {{ cartItems.length }}
+        </div>
+      </div>
+      <div class="cart-list">
+        <div class="cart-list-item-wrapper" *ngFor="let cartItem of cartItems">
+          <div class="cart-list-item-head">
+            <div>
+              {{ cartItem.title }}
+            </div>
+            <div class="cart-list-item-price">
+              {{ calcPrice(cartItem) }}
+            </div>
+          </div>
+          <div class="cart-list-item-bottom">
+            <div class="cart-list-item-descriprion">{{ getDescriptionOfItem(cartItem) }}</div>
+            <div><button mat-stroked-button (click)="removeItemFromCart(cartItem)">Remove</button></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="cart-list-item-overview">
+    <div>
+      <div class="cart-list-item-overview-text">Total</div>
+      <div class="cart-list-item-overview-tax">Including 0 in taxes</div>
+    </div>
+    <div class="cart-list-item-overview-price">
+      {{ countTotal() }}
+    </div>
+  </div>
+</div>

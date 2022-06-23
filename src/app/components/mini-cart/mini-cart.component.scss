@@ -1,0 +1,27 @@
+:host {
+  height: 100%;
+  width: 170px;
+  display: flex;
+  align-items: center;
+
+  .mini-cart-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  .mini-cart-price {
+    width: 45px;
+  }
+
+  .mini-cart-count {
+    height: 36px;
+    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #9679fb;
+    color: #fff;
+    border-radius: 100%;
+  }
+
+}

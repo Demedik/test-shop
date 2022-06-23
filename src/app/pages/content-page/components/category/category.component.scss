@@ -1,0 +1,19 @@
+:host {
+  .category-loaded {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .category-wrapper {
+    width: 100%;
+  }
+
+  .category-initial-loader {
+    width: 100%;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

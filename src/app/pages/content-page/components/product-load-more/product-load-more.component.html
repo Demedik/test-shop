@@ -1,0 +1,10 @@
+<div class="product-wrapper" (click)="getMore()">
+    <div *ngIf="loading$ | async; else loading" class="category-loading">
+        <mat-spinner [diameter]="36"></mat-spinner>
+    </div>
+    <ng-template #loading>
+      <div class="category-load-more">
+        <button mat-flat-button>Load More</button>
+      </div>
+    </ng-template>
+</div>
